@@ -1,0 +1,47 @@
+-- VLKIO GAMEBOOK FILE
+-- V:1
+-- NÁZEV (c) ROK, AUTOR
+
+-- $_SCENA
+-- JMENO: Věta
+-- >ZVUK
+-- >>ASYNC_ZVUK
+-- * $_PREJIT_NA_SCENU
+-- ?? $_MOZNOST * Rozhodování
+-- !PROMENNA = HODNOTA
+-- +PROMENNA = 1 * $_MOZNOST
+-- ** $_PREJIT_NA_KAPITOLU
+-- *** KONEC
+
+$_UVOD
+>UVOD1
+NARR: Toto je test
+DATE: 14. července 2020
+-- TODO: To-do poznámka
+* $_S1
+
+$_S1
+>KNOCK
+>S1ME1
+ME: Vstupte!
+>S1GRUB1
+GRUBER: Rada mě pověřila abych vám tuto zprávu předal osobně.
+>S1GRUB2
+-- náhodná poznámka
+GRUBER: Operace Panther se nezdařila, přišli jsme o celou 34. divizi.
+* $_C1
+
+$_C1
+>S1GRUB3
+GRUBER: Generálmajor Kogler to nepřežil, vybombardovali celý Severotov.
+?? $_S3 * Pokračujte.
+-- i tady může být poznámka
+?? $_S2 * Vybombardovali?
+
+$_S2
+NARR: volba 2
+* $_S3
+
+$_S3
+NARR: Konec testovacího souboru
+*** KONEC
